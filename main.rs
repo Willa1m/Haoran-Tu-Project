@@ -38,19 +38,19 @@ fn main() {
     let degrees = degree_distribution::compute_degrees(&game_graph);
     degree_distribution::analyze_degree_distribution(&degrees);
 
-    // Example: Compute Centrality Measures
+    // Compute Centrality Measures
     println!("Calculating centrality measures...");
     let centralities = centrality_measures::closeness_centrality(&game_graph);
     for (platform, centrality) in centralities {
         println!("Closeness Centrality of {}: {}", platform, centrality);
     }
 
-    // Example: Compute Six Degrees of Separation
+    // Compute Six Degrees of Separation
     println!("Calculating average path length...");
     let avg_path_length = six_degrees::average_path_length(&game_graph);
     println!("Average path length in the graph: {}", avg_path_length);
 
-    // Example: Find the Densest Subgraph
+    // Find the Densest Subgraph
     println!("Finding the densest subgraph...");
     let (densest_subgraph, density) = densest_subgraph::find_densest_subgraph(&game_graph);
     println!("Densest Subgraph has density {}: {:?}", density, densest_subgraph);
