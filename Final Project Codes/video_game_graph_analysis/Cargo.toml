@@ -1,0 +1,19 @@
+[package]
+name = "video_game_graph_analysis"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "video_game_graph_analysis"
+path = "src/lib.rs"
+
+[[bin]]
+name = "video_game_graph_analysis"
+path = "src/main.rs"
+
+[dependencies]
+calamine = "0.24.0"
+petgraph = "0.6.4"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
