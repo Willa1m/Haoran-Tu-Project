@@ -1,0 +1,2 @@
+Total nodes: 9742
+Total edges: 13157672
